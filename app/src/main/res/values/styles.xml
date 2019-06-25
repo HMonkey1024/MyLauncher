@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--启动时，会出现黑屏或白屏的现象，因为当布局文件尚未加载时，会先显示Window的窗口背景，黑屏或白屏即Window的窗口背景-->
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!--应用启动快，界面会先显示背景图，然后再刷新其他控件，刷新不同步-->
+    <style name="AppTheme.LauncherBg" parent="AppTheme.Launcher">
+        <!-- windowBackground可以设置为一张图片，也可以是能解析出图片的XML文件-->
+        <item name="android:windowBackground">@drawable/layer_launcher</item>
+    </style>
+
+    <!--应用启动慢，界面会一次性刷新出来，刷新同步-->
+    <style name="AppTheme.LauncherTransparent" parent="AppTheme.Launcher">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.gcj.myapplication.activity.LoginMainActivity">
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/tv_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:alpha="0"
+        android:background="@drawable/shape_login"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="102dp"
+        android:alpha="0"
+        android:background="@drawable/shape_login"
+        android:gravity="center"
+        android:text="新用户注册"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/launch_logo" />
+</RelativeLayout>

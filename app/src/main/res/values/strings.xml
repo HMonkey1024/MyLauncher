@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!--双击退出-->
+    <string name="exit_hint">再按一次退出程序</string>
+</resources>
